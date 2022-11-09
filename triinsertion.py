@@ -11,6 +11,7 @@
                         #fin tant que
                 #pour i de Tableau
                         #affichez Tableau avec list i
+#fin
 
 #tri insertion programmé
 def triinsertion(tailleT):
@@ -27,7 +28,7 @@ def triinsertion(tailleT):
                 print(tailleT[i])               
                 
 #tableau de bord
-tailleT = [100,50,30,51,1000,5,400]
+tailleT = [100,50,30,51,1000,5,400,1]
 triinsertion(tailleT)
 
                 
