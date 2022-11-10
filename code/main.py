@@ -1,4 +1,4 @@
-from methode_stat import *
+from methodestat import *
 
 print("Comparaison methodes de tri avec des tableaux aléatoires")
 print("")
