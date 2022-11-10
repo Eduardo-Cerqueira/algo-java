@@ -15,7 +15,7 @@
 #    Fin de Fonction
 # Fin
 
-def bubulle(tab):
+def triselectif1(tab):
     etape = 0
     changement = 0
     tri = False
@@ -30,4 +30,3 @@ def bubulle(tab):
     print(tab)
     print("comparaison", etape)
     print("changement", changement)
-bubulle([98, 22, 15, 32, 2, 74, 63, 70])
