@@ -8,6 +8,4 @@ def tri_bulle(tab):
                 tab[j], tab[j+1] = tab[j+1], tab[j]
                 changement += 1
             etape += 1
-    print(tab)
-    print("comparaison", etape)
-    print("changement", changement)
+    return changement

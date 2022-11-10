@@ -9,14 +9,18 @@
  # fin pour
  # fin procédure
 
-tab = [216, 30, 22, 20, 5, 2, 1, 73]
-for i in range(0,len(tab)-1):
-  min = i
-  for j in range(i+1,len(tab)):
-    if tab[j]<tab[min]:
-      min = j
-  if (min != i):
-    tmp = tab[i]
-    tab[i] = tab[min]
-    tab[min] = tmp
-print(tab)
+def triselectif(tab):
+    etape = 0
+    changement = 0
+    for i in range(0,len(tab)-1):
+        min = i
+        for j in range(i+1,len(tab)):
+            if tab[j]<tab[min]:
+                min = j
+                if (min != i):
+                    tmp = tab[i]
+                    tab[i] = tab[min]
+                    tab[min] = tmp
+                    changement += 1
+            etape += 1
+    return changement
