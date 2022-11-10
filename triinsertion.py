@@ -26,15 +26,4 @@ def triinsertion(tailleT):
                         changement += 1
                 tailleT[m+1] = p
                 etape+=1
-                
-        for i in range(len(tailleT)):
-                
-                print(tailleT[i])  
-        print("comparaison", etape)
-        print("changement", changement)            
-                
-#tableau de bord
-tailleT = [98, 22, 15, 32, 2, 74, 63, 70]
-triinsertion(tailleT)
-
-                
+        return changement
