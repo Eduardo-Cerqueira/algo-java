@@ -30,4 +30,4 @@ def bubulle(tab):
     print(tab)
     print("comparaison", etape)
     print("changement", changement)
-bubulle([6, 7, 4, 9, 0, 1, 5, 3, 8, 2])
+bubulle([98, 22, 15, 32, 2, 74, 63, 70])
