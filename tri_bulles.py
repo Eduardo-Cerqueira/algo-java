@@ -6,6 +6,8 @@ def triopti(array):
 triopti([6, 7, 4, 9, 0, 1, 5, 3, 8, 2])
 
 def tri_bulle(tab):
+    etape = 0
+    changement = 0
     n = len(tab)
     # Traverser tous les éléments du tableau
     for i in range(n):
@@ -13,7 +15,11 @@ def tri_bulle(tab):
             # échanger si l'élément trouvé est plus grand que le suivant
             if tab[j] > tab[j+1] :
                 tab[j], tab[j+1] = tab[j+1], tab[j]
+                changement += 1
+            etape += 1
     print(tab)
+    print("comparaison", etape)
+    print("changement", changement)
 # Programme principale pour tester le code ci-dessus
 tab = [98, 22, 15, 32, 2, 74, 63, 70]
  

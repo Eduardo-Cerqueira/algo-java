@@ -17,6 +17,7 @@
 
 def bubulle(tab):
     etape = 0
+    changement = 0
     tri = False
     while(tri == False):
         tri = True
@@ -24,7 +25,9 @@ def bubulle(tab):
             if tab[loop] > tab[loop+1]:
                 tab[loop], tab[loop+1] = tab[loop+1],tab[loop]
                 tri = False
+                changement += 1
             etape += 1
     print(tab)
-    print(etape)
-bubulle([6, 7, 4, 9, 0, 1, 5, 3, 8, 2])
+    print("comparaison", etape)
+    print("changement", changement)
+bubulle([98, 22, 15, 32, 2, 74, 63, 70])
