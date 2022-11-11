@@ -27,4 +27,4 @@ def bubulle(tab):
                 tri = False
                 changement += 1
             etape += 1
-    return changement
+    return etape
