@@ -26,4 +26,4 @@ def triinsertion(tailleT):
                         changement += 1
                 tailleT[m+1] = p
                 etape+=1
-        return changement
+        return etape
